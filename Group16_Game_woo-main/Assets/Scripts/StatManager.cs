@@ -84,8 +84,14 @@ public class StatManager : MonoBehaviour
                 }
 
             }
+            PlayerDied();
         }
         return true;
+    }
+    private void PlayerDied()
+    {
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
     }
 
     public float GetMaxHealth()

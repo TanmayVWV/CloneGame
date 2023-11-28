@@ -95,8 +95,7 @@ public class GameManager : MonoBehaviour
             Destroy(player);
         }
         PlayerMoney = 0;
-        player = Instantiate(playerPrefab);
-        ChangeScene(Scenes.Prototype_level);
+        
 
     }
 
